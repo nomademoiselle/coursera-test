@@ -1,0 +1,135 @@
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 100%
+}
+
+#menu {
+  font-size: 1.75em;
+  text-align: center;
+  margin: 30px
+}
+
+
+.dbox {
+  background-color: #999999;
+  color: black;
+  padding: 0px 0px 0px 10px;
+  border: 1px solid black;
+  margin: 1.5%;
+  width: 30.33%;
+  float: left;
+  overflow: auto;
+
+}
+.dbox p {
+  margin-top: 40px
+}
+
+
+#chicken {
+  background-color: #D59898;
+  font-size: 1.25em;
+  text-align: center;
+  color: black;
+  padding: 0px;
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  float: right;
+  margin: 0px;
+  width: 150px;
+
+}
+
+#beef {
+  background-color: #C14543;
+  font-size: 1.25em;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  float: right;
+  margin: 0px;
+  width: 150px;
+}
+
+#sushi {
+  background-color: #E5D198;
+  font-size: 1.25em;
+  text-align: center;
+  color: black;
+  padding: 0px;
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  float: right;
+  margin: 0px;
+  width: 150px;
+
+}
+
+
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+
+/********** Desktop devices only **********/
+/*Each of the 3 sections should take up equal amount of space on the screen.
+As you make the browser window wider or narrower, each section should become wider or narrower.
+(Hint: use percentages to define width and use the 'float' property. See Lecture 24)*/
+
+@media (min-width: 992px) {
+}
+
+/********** Tablet devices only **********/
+/*the first 2 sections should be in the first row and be of equal size.
+The 3rd section should be in the second row and take up the entire row by itself.*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #box-chicken {
+    margin: 1.5%;
+    width: 47%;
+  }
+
+  #box-beef {
+    margin: 1.5%;
+    width: 47%;;
+  }
+  #box-sushi {
+    width: 97%;
+  }
+}
+
+
+/********** Mobile devices only **********/
+/*each section should take up the entire row.*/
+
+@media (max-width: 767px) {
+  #box-chicken {
+    width: 97%;
+  }
+
+  #box-beef {
+    width: 97%;
+    float: left;
+  }
+  #box-sushi {
+    width: 97%;
+    float: left;
+  }
+}
