@@ -1,0 +1,23 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 150%
+}
+
+.dbox {
+  background-color: #DCD8D5;
+  color: black;
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+  border: 1px solid black;
+  margin-bottom: 1.5%;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #D74860
+}
